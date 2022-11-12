@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 import logo from "../public/images/logo.png";
 import { TbBrandGithub, TbBrandLinkedin, TbBrandTwitter } from "react-icons/tb";
 const TopBar = () => {
   return (
-    <nav className="flex justify-center">
-      <div className="bg-[#2a2b386b] backdrop-blur border-2 border-[#2a2b37] h-16 w-1/2 mt-12 flex justify-between px-6 items-center rounded-2xl min-w-[550px] z-50 fixed">
+    <nav className="flex  justify-center">
+      <div className="bg-[#2a2b386b] move-down max-w-4xl backdrop-blur border-2 border-[#2a2b37] h-16 w-1/2 mt-12 flex justify-between px-6 items-center rounded-2xl min-w-[550px] z-50 fixed">
         <div className="w-16 cursor-pointer">
           <Image src={logo} alt="logo-tarun" className="object-contain" />
         </div>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +11,95 @@ body {
 @layer components {
   .icon {
     @apply text-[#60606f] hover:text-gray-400 transition-colors cursor-pointer ml-3;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background-image: linear-gradient(
+      45deg,
+      #359fda 0%,
+      #1f5fcd 31%,
+      #7027e5 62%,
+      #da77f2 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animateGradient 2.5s infinite alternate-reverse;
+    text-decoration: underline;
+  }
+  .image-animate {
+    animation: imageBounce 2s infinite alternate ease-in-out;
+  }
+  .move-up {
+    animation: 0.8s 1s moveUp backwards;
+    animation-timing-function: cubic-bezier(0.49, 0.63, 0.54, 0.83);
+  }
+  .move-left {
+    animation: 1s moveLeft;
+    animation-timing-function: cubic-bezier(0.12, 0.84, 0.45, 1);
+  }
+  .move-down {
+    animation: 0.8s 1s moveDown backwards;
+    animation-timing-function: cubic-bezier(0.12, 0.84, 0.45, 1);
+  }
+  .show-up {
+    animation: 1s 1s showUp backwards ease-in-out;
+  }
+}
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(250px);
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animateGradient {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes imageBounce {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(5%);
   }
 }
