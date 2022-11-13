@@ -13,22 +13,22 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="h-screen relative flex items-center pl-28 justify-between">
+    <div className="h-screen relative flex items-center px-4 min-[500px]:px-10 sm:pl-28 justify-between">
       <TbChartBubble
-        className={`absolute top-16 ${iconClass} -translate-x-4  text-[#212135] text-9xl`}
+        className={`absolute top-16 ${iconClass} -translate-x-4  text-[#212135] text-9xl -z-10`}
       />
       <TbChristmasTree
-        className={`absolute bottom-16 right-1/3 ${iconClass} -rotate-45 text-[#212135] text-9xl`}
+        className={`absolute bottom-16 right-1/3 ${iconClass} -rotate-45 text-[#212135] text-9xl -z-10`}
       />
       <TbCloud
-        className={`absolute top-72 right-1/3 ${iconClass} -translate-x-4 text-[#212135] text-9xl`}
+        className={`absolute top-72 right-1/3 ${iconClass} -translate-x-4 text-[#212135] text-9xl -z-10`}
       />
-      <div className="max-w-3xl w-7/12">
+      <div className="max-w-3xl xl:w-8/12 w-full">
         <h2 className="uppercase move-left text-secondary text-xl font-montserrat tracking-widest mb-4">
           Tarun Kushwaha / /
         </h2>
-        <h1 className="text-white font-poppins text-7xl font-bold leading-[75px]">
-          <span className="block overflow-y-hidden h-[83px]">
+        <h1 className="text-white font-poppins xl:text-7xl md:text-6xl sm:text-5xl min-[525px]:text-5xl text-4xl font-bold leading-[45px] md:leading-[75px] min-[525px]:leading-[60px] sm:leading-[60px]">
+          <span className="block overflow-y-hidden xl:h-[83px] md:h-[80px]">
             <span className="block move-up">
               Building
               <span className="gradient-text"> beautiful</span>
@@ -52,7 +52,9 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className={`w-[500px] image-animate overflow-hidden ${imageClass}`}>
+      <div
+        className={`w-[500px] image-animate overflow-hidden ${imageClass} hidden min-[1018px]:block`}
+      >
         <Image src={bubbles} alt="bubbles" className="object-contain" />
       </div>
     </div>
