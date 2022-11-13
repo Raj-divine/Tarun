@@ -1,17 +1,28 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { TbChartBubble, TbChristmasTree, TbCloud } from "react-icons/tb";
 import bubbles from "../public/images/bubbles.png";
 const HeroSection = () => {
   const [imageClass, setImageClass] = useState("show-up");
-
+  const [iconClass, setIconClass] = useState("show-up");
   useEffect(() => {
     setTimeout(() => {
       setImageClass("image-animate");
+      setIconClass("animate-pulse");
     }, 2000);
   }, []);
 
   return (
-    <div className="h-screen flex items-center pl-28 justify-between">
+    <div className="h-screen relative flex items-center pl-28 justify-between">
+      <TbChartBubble
+        className={`absolute top-16 ${iconClass} -translate-x-4  text-[#212135] text-9xl`}
+      />
+      <TbChristmasTree
+        className={`absolute bottom-16 right-1/3 ${iconClass} -rotate-45 text-[#212135] text-9xl`}
+      />
+      <TbCloud
+        className={`absolute top-72 right-1/3 ${iconClass} -translate-x-4 text-[#212135] text-9xl`}
+      />
       <div className="max-w-3xl w-7/12">
         <h2 className="uppercase move-left text-secondary text-xl font-montserrat tracking-widest mb-4">
           Tarun Kushwaha / /
