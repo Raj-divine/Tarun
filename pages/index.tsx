@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import TopBar from "../components/TopBar";
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <TopBar />
       <HeroSection />
+      <AboutSection />
     </div>
   );
 }

@@ -115,7 +115,7 @@ body {
 
 @keyframes moveUp {
   0% {
-    transform: translateY(110%);
+    transform: translateY(120%);
   }
 
   100% {
