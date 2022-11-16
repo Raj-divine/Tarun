@@ -33,7 +33,37 @@ body {
     background-size: 300%;
     background-position: -100%;
     animation: animateGradient 2.5s infinite alternate-reverse;
-    text-decoration: underline;
+  }
+
+  .gradient-text-meethub {
+    background-image: linear-gradient(
+      45deg,
+      #9514fa 0%,
+      #e244e0 36%,
+      #e244e0 58%,
+      #9514fa 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animateGradient 2.5s infinite alternate-reverse;
+  }
+  .gradient-text-tuster {
+    background-image: linear-gradient(
+      45deg,
+      #38d9a9 0%,
+      #0ca678 36%,
+      #0ca678 58%,
+      #38d9a9 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;
+    animation: animateGradient 2.5s infinite alternate-reverse;
   }
 
   .image-animate {
