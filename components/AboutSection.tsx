@@ -3,17 +3,17 @@ import { TbBolt, TbChartDots3, TbFlame } from "react-icons/tb";
 
 const AboutSection = () => {
   return (
-    <section className="h-screen relative">
+    <section className="sm:h-[75vh] h-[60vh] relative">
       <TbBolt className="absolute lg:top-32 lg:left-52 top-16 left-16 animate-pulse -translate-x-4 -rotate-45 text-[#212135] text-9xl -z-10" />
       <TbChartDots3 className="absolute lg:bottom-60 lg:right-52 sm:bottom-28 sm:right-36 bottom-80 right-16 animate-pulse -translate-x-4 -rotate-45 text-[#212135] text-9xl -z-10" />
       <TbFlame className="absolute lg:bottom-48 lg:left-36 bottom-16 left-20 sm:left-32 animate-pulse -translate-x-4 rotate-45 text-[#212135] text-9xl -z-10" />
       <div className="text-center">
-        <h3 className="text-transparent mt-48 sm:text-6xl text-5xl font-bold bg-clip-text bg-gradient-to-r from-[#7027e5] to-[#da77f2] font-poppins cursor-default">
+        <h3 className="text-transparent mt-6 sm:mt-48 sm:text-6xl text-5xl font-bold bg-clip-text bg-gradient-to-r from-[#7027e5] to-[#da77f2] font-poppins cursor-default">
           About me
         </h3>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: 230 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}

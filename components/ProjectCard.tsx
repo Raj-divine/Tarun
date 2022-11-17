@@ -40,11 +40,11 @@ const ProjectCard = ({ reverse, projectData }: ProjectCardProps) => {
       className="flex justify-center"
     >
       <div
-        className={`w-[70%] flex relative ${
-          reverse ? "flex-row-reverse" : ""
-        } mt-48`}
+        className={`xl:w-[80%] md:w-4/5 items-center flex-col-reverse flex relative mt-28 lg:mt-48 ${
+          reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } `}
       >
-        <div className=" w-1/2 border-[#2a2b37] border-2 p-4 rounded-lg">
+        <div className="xl:w-1/2 lg:w-2/5 w-4/5 border-[#2a2b37] border-2 p-4 rounded-lg">
           <Image
             src={image}
             alt="meethub"
@@ -54,12 +54,12 @@ const ProjectCard = ({ reverse, projectData }: ProjectCardProps) => {
         <div
           className={
             reverse
-              ? "w-1/2 flex flex-col items-start"
-              : "w-1/2 flex flex-col items-end"
+              ? "xl:w-1/2 lg:w-3/5 md:w-3/5 mb-10 lg:mb-0 flex flex-col items-center lg:items-start"
+              : "xl:w-1/2 lg:w-3/5 md:w-3/5 mb-10 lg:mb-0 flex flex-col items-center lg:items-end"
           }
         >
           <h5
-            className={`font-montserrat mt-16 text-5xl font-bold ${
+            className={`font-montserrat lg:mt-16 text-5xl sm:text-6xl lg:text-5xl font-bold ${
               title === "Meethub"
                 ? "gradient-text-meethub"
                 : "gradient-text-tuster"
@@ -67,12 +67,12 @@ const ProjectCard = ({ reverse, projectData }: ProjectCardProps) => {
           >
             {title}
           </h5>
-          <div className=" w-[450px] mt-10 bg-[#1e1e30] p-8 shadow-2xl">
+          <div className="sm:w-[450px] w-11/12 mt-10 bg-[#1e1e30] p-8 shadow-2xl">
             <p className="text-gray-500 text-sm tracking-wider text-start font-poppins">
               {description}
             </p>
           </div>
-          <div className="text-gray-400 font-medium text-sm w-[400px] flex justify-between mt-10 cursor-pointer">
+          <div className="text-gray-400 font-medium min-[500px]:text-sm text-xs w-[320px] min-[500px]:w-[400px] flex justify-between mt-10 cursor-pointer">
             {tech.map((item) => {
               return (
                 <TechLink key={item.text} aria={item.text} href={item.link}>
