@@ -22,7 +22,7 @@ const projectData = [
       { link: "https://firebase.google.com/", text: "firebase" },
       { link: "https://sass-lang.com/", text: "scss" },
       { link: "https://redux-toolkit.js.org/", text: "redux" },
-      { link: "https://mantine.dev/", text: "mantinui" },
+      { link: "https://mantine.dev/", text: "mantineui" },
     ],
   },
   {
@@ -37,7 +37,7 @@ const projectData = [
       { link: "https://firebase.google.com/", text: "firebase" },
       { link: "https://tailwindcss.com/", text: "tailwindcss" },
       { link: "https://redux-toolkit.js.org/", text: "redux" },
-      { link: "https://mantine.dev/", text: "mantinui" },
+      { link: "https://mantine.dev/", text: "mantineui" },
     ],
   },
 ];
