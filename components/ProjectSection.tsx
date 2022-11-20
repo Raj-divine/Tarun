@@ -52,7 +52,7 @@ const ProjectSection = () => {
       <TbActivity className="absolute bottom-28 left-80 animate-pulse -rotate-45 -translate-x-4  text-[#212135] text-9xl -z-10 hidden sm:block" />
       <TbFlame className="absolute bottom-28 right-12 animate-pulse -rotate-45 -translate-x-4  text-[#212135] text-9xl -z-10 hidden sm:block" />
       <div className="text-center">
-        <h3 className="text-transparent leading-[75px] sm:text-6xl text-5xl font-bold bg-clip-text bg-gradient-to-r from-[#7027e5] to-[#da77f2] font-poppins cursor-default">
+        <h3 className="text-transparent h-20 leading-[75px] sm:text-6xl text-5xl font-bold bg-clip-text bg-gradient-to-r from-[#7027e5] to-[#da77f2] font-poppins cursor-default">
           My projects
         </h3>
         <div className="flex justify-center">
