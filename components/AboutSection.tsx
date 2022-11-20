@@ -20,7 +20,7 @@ const AboutSection = () => {
         className="lg:w-[800px] sm:w-3/4 w-[85%] my-0 mx-auto text-center sm:mt-20 mt-8"
       >
         <p className="text-gray-400 md:text-3xl sm:text-2xl min-[591px]:text-2xl min-[450px]:text-xl font-montserrat tracking-wide lg:leading-10">
-          Hey! 👋, my name is <strong>Tarun</strong> and I'm a passionate
+          Hey! 👋, my name is <strong>Tarun</strong> and I&apos;m a passionate
           frontend developer who loves tech, learning new things, and has been
           coding since the age of 13.
         </p>

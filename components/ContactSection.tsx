@@ -15,8 +15,8 @@ const ContactSection = () => {
         >
           <p className="text-gray-400 md:text-3xl sm:text-2xl min-[591px]:text-2xl min-[450px]:text-xl font-montserrat tracking-wide lg:leading-10">
             Thanks for checking out my portfolio 🎉! I hope you liked it, I
-            would appreciate your feedback also, I'm constantly looking for new
-            opportunities and welcome anyone to my inboxes ✉️.
+            would appreciate your feedback also, I&apos;m constantly looking for
+            new opportunities and welcome anyone to my inboxes ✉️.
           </p>
           <a
             className="bg-gradient-to-r inline-block from-[#7027e5] to-[#da77f2] mt-12 rounded-xl sm:text-2xl font-poppins px-6 py-4 text-gray-200 bg-[length:200%] shadow-lg transition-all hover:bg-center duration-500"
