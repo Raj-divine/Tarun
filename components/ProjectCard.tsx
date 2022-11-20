@@ -48,6 +48,7 @@ const ProjectCard = ({ reverse, projectData }: ProjectCardProps) => {
           <Image
             src={image}
             alt="meethub"
+            placeholder="blur"
             className="object-contain shadow-md"
           />
         </div>

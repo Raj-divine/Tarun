@@ -55,7 +55,12 @@ const HeroSection = () => {
       <div
         className={`w-[500px] image-animate overflow-hidden ${imageClass} hidden min-[1018px]:block`}
       >
-        <Image src={bubbles} alt="bubbles" className="object-contain" />
+        <Image
+          placeholder="blur"
+          src={bubbles}
+          alt="bubbles"
+          className="object-contain"
+        />
       </div>
     </div>
   );

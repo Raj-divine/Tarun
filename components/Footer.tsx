@@ -12,6 +12,7 @@ const Footer = () => {
           href="https://github.com/Raj-divine/"
           target="_blank"
           rel="noreferrer"
+          placeholder="blur"
           aria-label="github"
         >
           <TbBrandGithub size={25} className="icon" />
