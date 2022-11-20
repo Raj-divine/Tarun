@@ -1,5 +1,7 @@
 import Head from "next/head";
 import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import TopBar from "../components/TopBar";
@@ -15,6 +17,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
