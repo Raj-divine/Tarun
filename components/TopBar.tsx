@@ -4,7 +4,7 @@ import { TbBrandGithub, TbBrandLinkedin, TbBrandTwitter } from "react-icons/tb";
 const TopBar = () => {
   return (
     <nav className="flex justify-center">
-      <div className="bg-[#2a2b386b] move-down max-w-4xl backdrop-blur border-2 border-[#2a2b37] h-16 w-11/12 sm:w-3/4 md:w-3/5 lg:w-1/2 mt-12 flex justify-between px-6 items-center rounded-2xl  z-50 fixed">
+      <div className="bg-[#2a2b3887] move-down max-w-4xl backdrop-blur-3xl border-2 border-[#2a2b37] h-16 w-11/12 sm:w-3/4 md:w-3/5 lg:w-1/2 mt-12 flex justify-between px-6 items-center rounded-2xl  z-50 fixed">
         <div className="w-16 cursor-pointer">
           <Image
             src={logo}

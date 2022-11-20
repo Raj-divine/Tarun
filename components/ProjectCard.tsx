@@ -44,14 +44,20 @@ const ProjectCard = ({ reverse, projectData }: ProjectCardProps) => {
           reverse ? "lg:flex-row-reverse" : "lg:flex-row"
         } `}
       >
-        <div className="xl:w-1/2 lg:w-2/5 w-4/5 border-[#2a2b37] border-2 p-4 rounded-lg">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          aria-label={title}
+          href={link}
+          className="xl:w-1/2 lg:w-2/5 w-4/5 border-[#2a2b37] border-2 p-4 rounded-lg cursor-pointer"
+        >
           <Image
             src={image}
             alt="meethub"
             placeholder="blur"
             className="object-contain shadow-md"
           />
-        </div>
+        </a>
         <div
           className={
             reverse
