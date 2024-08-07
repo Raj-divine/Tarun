@@ -20,7 +20,7 @@ const ContactSection = () => {
           </p>
           <a
             className="bg-gradient-to-r inline-block from-[#7027e5] to-[#da77f2] mt-12 rounded-xl sm:text-2xl font-poppins px-6 py-4 text-gray-200 bg-[length:200%] shadow-lg transition-all hover:bg-center duration-500"
-            href="mailto:rajkushwah9968117019@gmail.com"
+            href="mailto:tarunkush0510@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
           >
